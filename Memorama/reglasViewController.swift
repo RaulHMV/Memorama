@@ -11,8 +11,6 @@ class reglasViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -27,5 +25,10 @@ class reglasViewController: UIViewController {
     */
 
     @IBAction func btnRegresar(_ sender: UIButton) {
+        // Reproducir sonido de botón
+        GestorDeAudio.compartido.reproducirSonidoBoton()
+        
+        // Regresar
+        dismiss(animated: true, completion: nil)
     }
 }

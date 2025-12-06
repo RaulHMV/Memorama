@@ -12,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Memorama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -35,22 +34,23 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="7vn-gS-iQj" kind="presentation" modalPresentationStyle="fullScreen" id="Smb-hY-g62"/>
+                        <outlet property="imagenLogo" destination="Xam-Rk-iZz" id="yWK-LK-3cB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="99"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="Kcp-pf-B0t">
             <objects>
-                <viewController id="7vn-gS-iQj" customClass="inicioViewController" customModule="Memorama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicioViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7vn-gS-iQj" customClass="inicioViewController" customModule="Memorama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="25p-8N-exc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJ9-K1-GH1">
-                                <rect key="frame" x="41.333333333333343" y="236.66666666666663" width="331.33333333333326" height="40"/>
+                                <rect key="frame" x="41.333333333333343" y="256.66666666666669" width="331.33333333333326" height="40"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JWM-tm-z5m"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tB0-ns-hqL">
-                                <rect key="frame" x="41.333333333333343" y="292.66666666666669" width="331.33333333333326" height="40"/>
+                                <rect key="frame" x="41.333333333333343" y="312.66666666666669" width="331.33333333333326" height="40"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="IuO-PW-oqz"/>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwq-9Q-P2r">
-                                <rect key="frame" x="41.333333333333343" y="348.66666666666669" width="331.33333333333326" height="40"/>
+                                <rect key="frame" x="41.333333333333343" y="368.66666666666669" width="331.33333333333326" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WfD-86-lKu"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-9f-XGH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="220.66666666666666"/>
+                                <rect key="frame" x="0.0" y="19.999999999999986" width="414" height="220.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7ux-9f-XGH" secondAttribute="height" multiplier="15:8" id="Hwa-W4-szb"/>
                                 </constraints>
@@ -157,7 +157,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FSI-hp-UCb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9QV-W6-kI5" firstAttribute="leading" secondItem="FSI-hp-UCb" secondAttribute="leading" id="0rf-wW-vpr"/>
                             <constraint firstItem="bWe-jn-uS3" firstAttribute="top" secondItem="9QV-W6-kI5" secondAttribute="bottom" id="2kt-tt-Xb2"/>
@@ -202,14 +202,20 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lck-kT-GPf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="680"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">¡Escúchenme bien, bola de hippies, porque no lo voy a repetir! El objetivo de este juego es encontrar los 8 pares de cartas idénticas, y más les vale hacerlo rápido porque no tengo todo el día. Tienen que tocar las cartas para voltearlas, y si hacen par, se quedan así, pero si fallan, se vuelven a tapar y pierden puntos por ser tan lentos. Su puntuación bajará entre más se tarden y más errores cometan, así que usen el cerebro si es que tienen uno. El juego se acaba cuando destapan todo. Si logran un puntaje alto, podrán poner su nombre en los Récords, pero dudo que le ganen a los mejores. ¡Respeten mi autoridad y pónganse a jugar ya!
+
+Atentamente Cartman
+
+Victor Raul Hernandez Mejia 23170067
+Javier Ivan Saucedo Perez 23170069
+Diego Manuel Cassio Castruita 23170196</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t6d-c7-Pyh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lck-kT-GPf" firstAttribute="top" secondItem="t6d-c7-Pyh" secondAttribute="top" id="8g1-Lr-zyD"/>
                             <constraint firstItem="t6d-c7-Pyh" firstAttribute="bottom" secondItem="xsf-Rd-9Uk" secondAttribute="bottom" constant="16" id="CF6-NB-eIk"/>
@@ -294,7 +300,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TMv-WX-9R7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cWe-ID-CVn" firstAttribute="top" secondItem="TMv-WX-9R7" secondAttribute="top" constant="16" id="CSU-qU-iYH"/>
                             <constraint firstItem="cWe-ID-CVn" firstAttribute="top" secondItem="K4c-Dq-ZeL" secondAttribute="top" id="FwS-ve-nsz"/>

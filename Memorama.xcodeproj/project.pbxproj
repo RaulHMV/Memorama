@@ -29,11 +29,6 @@
 			path = Memorama;
 			sourceTree = "<group>";
 		};
-		5797AD182EE1762F00DA0302 /* fotos */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fotos;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +45,6 @@
 		5797ACF72EE16D3B00DA0302 = {
 			isa = PBXGroup;
 			children = (
-				5797AD182EE1762F00DA0302 /* fotos */,
 				5797AD022EE16D3B00DA0302 /* Memorama */,
 				5797AD012EE16D3B00DA0302 /* Products */,
 			);
@@ -81,7 +75,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5797AD022EE16D3B00DA0302 /* Memorama */,
-				5797AD182EE1762F00DA0302 /* fotos */,
 			);
 			name = Memorama;
 			packageProductDependencies = (
@@ -148,8 +141,8 @@
 		5797AD142EE16D3F00DA0302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QKXF2NW7YT;
@@ -185,8 +178,8 @@
 		5797AD152EE16D3F00DA0302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QKXF2NW7YT;
