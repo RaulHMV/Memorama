@@ -26,4 +26,6 @@ class reglasViewController: UIViewController {
     }
     */
 
+    @IBAction func btnRegresar(_ sender: UIButton) {
+    }
 }
